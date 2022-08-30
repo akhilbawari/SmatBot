@@ -1,2 +1,0 @@
-Project Code = wired-interest-36
-project = www.smatbot.com
