@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SmatBot | AI Chatbot for all your business needs</title>
+    <link rel="stylesheet" href="./style/footer.css">
+    <link rel="stylesheet" href="./style/navbar.css">
+    <link rel="stylesheet" href="./style/partners.css">
+</head>
+<body>
+    <div id="navbar"></div>
+
+    <div id="header">
+
+        <div id="left">
+
+            <div id="img">
+
+                <div id="imgfst">
+                    <img src="https://www.smatbot.com/img/partners_page_images/p2-sm-red.svg" alt="">
+                </div>
+
+                <div id="imgsnd">
+                    <img src="https://www.smatbot.com/img/partners_page_images/p2-sm-blue.svg" alt="">
+                </div>
+            </div>
+
+            <h2>Partner with Smatbot To <br>
+            
+              See Instant Revenue Growth</h2>
+            
+            <p>Earn Continuous Steady Revenue While Adding Value
+
+              <br>  to Your Clients.
+            </p>
+
+
+            <div id="demo">
+                <div id="fstbtn">
+                    <button>Let's Talk</button>
+                    <p>*Try free for 3 months</p>
+                </div>
+            </div>
+
+
+        </div>
+
+
+
+            <div id="right">
+
+                
+        
+                <div id="main">
+                    <img src="https://www.smatbot.com/img/partners_page_images/pg1.png" alt="">
+                </div>
+            </div>
+            
+    </div>
+
+  
+    <div id="slider">
+        <div><img src="https://www.smatbot.com/img/companies/tata.svg" alt=""></div>
+        <div><img src="https://www.smatbot.com/img/companies/mahindra.svg" alt=""></div>
+        <div><img src="https://www.smatbot.com/img/companies/fnc.svg" alt=""></div>
+        <div><img src="https://www.smatbot.com/img/companies/cinepolis.svg" alt=""></div>
+        <div><img src="https://www.smatbot.com/img/companies/saint_gobain.svg" alt=""></div>
+        <div><img src="https://www.smatbot.com/img/companies/kch.svg" alt=""></div>
+        <div><img src="https://www.smatbot.com/img/companies/ramoji.svg" alt=""></div>
+        <div><img src="https://www.smatbot.com/img/companies/forward_parcel.svg" alt=""></div>
+    </div>
+
+<!-- ....................page.............................. -->
+<div id="page2">
+    <div id="page2_div0"> <img src="https://www.smatbot.com/img/partners_page_images/p2side.png" alt=""></div>
+    <div id="page2_div1">
+     <h2>Experience <br>
+        Our Platform For Yourself</h1>
+        <p>Free Usage of Our Platform - Both Website
+            & WhatsApp for 3 months.</p>
+
+    </div>
+    <div id="page2_div2">
+      
+       <img src="https://www.smatbot.com/img/partners_page_images/p2img.png" alt="">
+      
+    </div>
+  </div>
+
+<div id="page3">
+  <div id="page3_div1">
+    <div>
+      <img src="https://www.smatbot.com/img/partners_page_images/p3-left.svg" alt=""/>
+    </div>
+    <div>
+      <h2>Earn Recurring Revenue</h2>
+      <p>Get a 20% commission (on the recurring subscription value)for any clients that onboard with us through your referral.</p>
+    </div>
+  </div>
+  <div id="page3_div2">
+    <div>
+        <img src="https://www.smatbot.com/img/partners_page_images/p3-right.svg" alt=""/>
+      </div>
+      <div>
+        <h2>Add Value To Your Clients</h2>
+        <p>10% discount will be applied on standard
+            plans to the first client you onboard with us.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ............................Contact Us.......................................... -->
+
+
+   <!-- ............................Contact Us.......................................... -->
+   <div id="contact">
+    <div class="partnerHead">Contact Us</div>
+    <img class="line" src="https://www.smatbot.com/img/Line.svg" alt="">
+    <div class="form">
+        <div>
+            <input id="name" type="text" placeholder="Name">
+        </div>
+        <div>
+            <input id="email" type="email" placeholder="Email">
+        </div>
+        <div>
+            
+            <input id="number" type="number" placeholder="Phone Number">
+        </div>
+        <div>
+            <input id="website" type="text" placeholder="Website">
+        
+        </div>
+        
+       
+        <div>
+            <input id="message" type="message" placeholder="Message">
+        </div>
+       
+        
+    </div>
+    <div class="contactBtn"><button onclick="submits()" class="primaryBtn">Send Message</button></div>
+</div>
+
+    
+    <div id="footer"></div>
+</body>
+</html>
+<script type="module">
+
+import navbars from "./components/navbar.js"
+let nav=document.getElementById("navbar")
+nav.innerHTML=navbars()
+    import footer from "./components/footer.js"
+let container=document.getElementById("footer")
+container.innerHTML=footer()
+</script>
+
+
+
+
+<script >
+
+let btn=document.getElementsByClassName("primaryBtn")
+function submits(){
+    let masgData={
+    
+    name:document.getElementById("name").value,
+    email:document.getElementById("email").value,
+    website:document.getElementById("website").value,
+    message:document.getElementById("message").value,
+    number:document.getElementById("number").value,
+    
+}
+console.log('masgData:', masgData);
+if(masgData.name==""){
+    alert("Name should not be empty")
+}else if (masgData.email=="") {
+    alert("Email should not be empty")
+}else if(masgData.number==""){
+    alert("Number should not be empty")
+}
+else if(masgData.website==""){
+    alert("Website should not be empty")
+} else if(masgData.message==""){
+    alert("Message should not be empty")
+}
+else{
+    alert("Message Send")
+
+}
+    
+   
+}
+
+</script>

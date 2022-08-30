@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <link rel="stylesheet" href="./style/login.css">
+    <title>SmatBot | AI Chatbot for all your business needs</title>
+    
+</head>
+
+<body>
+    <div id="Container">
+        <div class="form-box">
+            <div class="form-logo">
+                <div>
+                    <div>
+                    <a href="#">
+                        <img src="https://www.smatbot.com/img/SignIn/Logo_only.svg" alt="" class="form-logo-img">
+                       
+                    </a>
+                    </div>
+                    <div class="form-logo-heading" >
+                        <h1>
+                            SmartBot
+                        </h1>
+
+                    </div>
+                </div>
+                <div>
+                    
+                    <button class="form-logo-button" id="home_button">
+                        
+                        <h1>< Home</h1>
+                    </button>
+                    
+                </div>
+            </div>
+            <h1 id="welcomeback-heading">Welcome Back</h1>
+            <p id="login-heading">Please login to continue to access for Dashboard</p>
+            <div id="form">
+                <form id="loginform">
+                    <label for="">Email Address</label>
+                    <input type="email" placeholder="Enter Your Bussiness Email" id="user-email">
+                    <label for="">Password</label>
+                    <input type="password" placeholder="Enter Your Bussiness Email" id="user-password">
+                    <i class="far fa-eye-slash" aria-hidden="true" id="togglePassword"></i>
+                    <div id="form-checkbox">
+                        <input type="checkbox" name="" id="user-checkbox" onclick="checkbox()">
+                       <p>Remember me</p> 
+                       <p id="forgot-password">Forgot password ?</p>
+
+                    </div>
+                    <input type="submit" value="Sign up"  id="submit">
+                    <div id="already-account">
+                        <p>New to Product ?<a id="signup-color" href="signup.html"> Sign Up</a></p>
+                    </div>
+                    <div id="link_page">
+                        <a href="index.html">Home</a>
+                        <h1>|</h1>
+                        <a href="instagram.html">WhatsApp</a>
+                        <h1>|</h1>
+                        <a href="pricing.html">Pricing</a>
+
+                    </div>
+                    
+                </form>
+            </div>
+        </div>
+        <div class="plan-content">
+           <div class="plan-content-heading">
+             <h1>Feature Updates</h1>  
+           </div>
+           <hr>
+           <div id="plan-content-box">
+               <div class="plan-content-data">
+        
+                <h1>Android App </h1>
+                <p>SmatBot mobile application is now live on the android play store. Your live agents can now answer user queries on the go.</p>
+               </div>
+               <div class="plan-content-data">
+        
+                <h1>Departments </h1>
+                <p>Organise your live chat agents based on their roles and responsibilities like sales, support, tech etc.</p>
+               </div>
+               <div class="plan-content-data">
+        
+                <h1>Share Files In Live Chat</h1>
+                <p>Let users and live agents comfortably share files between them.</p>
+               </div>
+               <div class="plan-content-data">
+        
+                <h1>Supervisor Account </h1>
+                <p>Create a user with the role 'Supervisor' to monitor and manage your live agents in real-time.</p>
+               </div>
+               <div class="plan-content-data">
+        
+                <h1>Live Chat Limit</h1>
+                <p>Set a limit on the number of simultaneous chats a live chat agent can handle.</p>
+               </div>
+               
+           </div>
+        </div>   
+           
+         
+    </div>
+    
+    
+</body>
+</html>
+
+<script src="./script/login.js"></script>
